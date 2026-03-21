@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="glassmorphism-header">
+        <h1>Image Gallery</h1>
+    </header>
+
+    <div class="controls-container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="tech">Tech</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+        </div>
+        <input type="text" id="search-bar" placeholder="Search images...">
+    </div>
+
+    <div class="gallery-container">
+        <div class="image-wrapper" data-category="nature">
+            <div class="skeleton-loader"></div>
+            <img data-src="./images/placeholder.png" alt="Green Forest">
+            <span class="favorite-icon">&#10084;</span>
+        </div>
+        <div class="image-wrapper" data-category="tech">
+            <div class="skeleton-loader"></div>
+            <img data-src="./images/placeholder.png" alt="Circuit Board">
+            <span class="favorite-icon">&#10084;</span>
+        </div>
+        <div class="image-wrapper" data-category="architecture">
+            <div class="skeleton-loader"></div>
+            <img data-src="./images/placeholder.png" alt="Modern Building">
+            <span class="favorite-icon">&#10084;</span>
+        </div>
+        <div class="image-wrapper" data-category="nature">
+            <div class="skeleton-loader"></div>
+            <img data-src="./images/placeholder.png" alt="Mountain Landscape">
+            <span class="favorite-icon">&#10084;</span>
+        </div>
+        <div class="image-wrapper" data-category="tech">
+            <div class="skeleton-loader"></div>
+            <img data-src="./images/placeholder.png" alt="Code Screen">
+            <span class="favorite-icon">&#10084;</span>
+        </div>
+        <div class="image-wrapper" data-category="architecture">
+            <div class="skeleton-loader"></div>
+            <img data-src="./images/placeholder.png" alt="City Skyline">
+            <span class="favorite-icon">&#10084;</span>
+        </div>
+        <div class="image-wrapper" data-category="nature">
+            <div class="skeleton-loader"></div>
+            <img data-src="./images/placeholder.png" alt="Ocean Sunset">
+            <span class="favorite-icon">&#10084;</span>
+        </div>
+        <div class="image-wrapper" data-category="tech">
+            <div class="skeleton-loader"></div>
+            <img data-src="./images/placeholder.png" alt="Server Racks">
+            <span class="favorite-icon">&#10084;</span>
+        </div>
+    </div>
+    <div id="notification-container">
+        Saved to Favorites!
+    </div>
+    <script src="script.js"></script>
+
+    <div id="lightbox-overlay">
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-image">
+            <div class="lightbox-controls">
+                <button id="prev-btn" class="control-btn">&#10094; Prev</button>
+                <button id="play-pause-btn" class="control-btn">Play</button>
+                <button id="next-btn" class="control-btn">Next &#10095;</button>
+            </div>
+            <div class="lightbox-utilities">
+                <a href="" id="download-btn" class="utility-btn" download>Download</a>
+                <button id="zoom-toggle-btn" class="utility-btn">Zoom</button>
+            </div>
+            <button id="close-btn" class="close-btn">&times;</button>
+        </div>
+    </div>
+    <button id="back-to-top" class="back-to-top-btn">&#9650; Top</button>
+</body>
+</html>
